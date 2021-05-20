@@ -6,6 +6,8 @@ const createError = require('http-errors');
 const app = express();
 const cors = require('cors')
 
+require('./src/config/db.config')
+
 /* Middlewares */
 
 app.use(express.json());
