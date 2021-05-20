@@ -6,8 +6,8 @@ module.exports.getRandomName = (req, res, next) => {
 
 
 
-  
   res.json(names)
+
   //next(createError(404, { errors: { email: 'Email or password is incorrect' }}))
 
     
