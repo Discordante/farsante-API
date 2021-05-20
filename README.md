@@ -1,1 +1,1 @@
-# spanishFaker
+# spanish-faker
