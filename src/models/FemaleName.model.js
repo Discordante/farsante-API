@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
 
-const FemaleNameSchema = mongoose.Schema(
+const femaleNameSchema = new mongoose.Schema(
   {
-    femalename: {
+    name: {
       type: String
     }
   },
@@ -19,9 +19,9 @@ const FemaleNameSchema = mongoose.Schema(
       }
     }
   }
-);
+)
 
 
-const FemaleName = mongoose.model('FemaleName', FemaleNameSchema)
+const FemaleName = mongoose.model('FemaleName', femaleNameSchema)
 
 module.exports = FemaleName
