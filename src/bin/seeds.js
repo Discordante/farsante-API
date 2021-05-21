@@ -1,7 +1,9 @@
 const mongoose = require('mongoose')
 
 //models
-const PeopleName = require('../models/LastName.model')
+const LastName = require('../models/LastName.model')
+const FemaleName = require('../models/FemaleName.model')
+const MaleName = require('../models/MaleName.model')
 
 
 
@@ -11,8 +13,10 @@ const names = require("./names.json")
 
 Promise.all([LastName.deleteMany(), FemaleName.deleteMany(), MaleName.deleteMany()])
 .then(() => {
-    
-   console.log(names)
+    names.lastname.forEach(elem =>   LastName.create({lastname: elem}))
+    names.femalename.forEach(elem => FemaleName.create({femalename: elem}))
+    names.malename.forEach(elem =>   MaleName.create({malename: elem}))
+
 })
 .catch(error => console.log("---------- Error deleting data ----------"))
 
