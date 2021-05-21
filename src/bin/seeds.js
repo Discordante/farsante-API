@@ -19,6 +19,10 @@ Promise.all([LastName.deleteMany(), FemaleName.deleteMany(), MaleName.deleteMany
 
 })
 .catch(error => console.log("---------- Error deleting data ----------"))
+.finally(() => {
+    console.log("The database has been successfully filled in.")
+    process.exit(0)
+})
 
  
 
