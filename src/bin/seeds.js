@@ -14,8 +14,8 @@ const names = require("./names.json")
 Promise.all([LastName.deleteMany(), FemaleName.deleteMany(), MaleName.deleteMany()])
 .then(() => {
     names.lastname.forEach(elem =>   LastName.create({lastname: elem}))
-    names.femalename.forEach(elem => FemaleName.create({femalename: elem}))
-    names.malename.forEach(elem =>   MaleName.create({malename: elem}))
+    names.femalename.forEach(elem => FemaleName.create({name: elem}))
+    names.malename.forEach(elem =>   MaleName.create({name: elem}))
 })
 .catch(error => console.log("---------- Error deleting data ----------"))
 

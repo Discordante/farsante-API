@@ -2,12 +2,13 @@ const mongoose = require('mongoose')
 
 const MaleNameSchema = mongoose.Schema(
   {
-    malename: {
+    name: {
       type: String
     }
   },
   {
     timestamps: true,
+    versionKey: false,
     toJSON: {
       transform: (doc, ret) => {
         ret.id = doc._id
