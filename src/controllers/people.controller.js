@@ -30,3 +30,10 @@ module.exports.getMaleName = (req, res, next) => {
   .catch(e => next(e))
 }
 
+module.exports.getLastName = (req, res, next) => {
+  Lastname.aggregate([{ $sample: { size: 1 } }])
+  .then(name => res.status(200).json(name))
+  .catch(e => next(e))
+}
+
+
