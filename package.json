@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app",
     "seeds": "node ./src/bin/seeds.js",
-    "test": "jest"
+    "test": "jest --detectOpenHandles"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,8 @@
   "homepage": "https://github.com/Discordante/spanishFaker#readme",
   "devDependencies": {
     "jest": "^26.6.3",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.3"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -29,5 +30,8 @@
     "express": "^4.17.1",
     "http-errors": "^1.7.2",
     "mongoose": "^5.12.10"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
