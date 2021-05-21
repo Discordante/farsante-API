@@ -16,13 +16,9 @@ Promise.all([LastName.deleteMany(), FemaleName.deleteMany(), MaleName.deleteMany
     names.lastname.forEach(elem =>   LastName.create({lastname: elem}))
     names.femalename.forEach(elem => FemaleName.create({femalename: elem}))
     names.malename.forEach(elem =>   MaleName.create({malename: elem}))
-
 })
 .catch(error => console.log("---------- Error deleting data ----------"))
-.finally(() => {
-    console.log("The database has been successfully filled in.")
-    process.exit(0)
-})
+
 
  
 
