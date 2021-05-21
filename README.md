@@ -5,7 +5,7 @@ The project is inspired by the faker API, which is widely used to obtain random 
 
 The API must handle the following resources:
 
-* Column
+
 
 | HTTP Method |     Path     |        Description        |
 | ----------- | ------------ | ------------------------- |
@@ -15,7 +15,7 @@ The API must handle the following resources:
 | GET         | /lastName    | get a random surname      |
 
 
-Example of the column object:
+Example of the randomName request:
 
 ```
 {
