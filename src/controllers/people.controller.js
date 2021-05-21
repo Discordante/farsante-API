@@ -1,14 +1,32 @@
 const createError = require('http-errors')
 
-const names = require('../bin/names.json')
+const Malename = require('../models/MaleName.model')
+const Femalename = require('../models/FemaleName.model')
+const Lastname = require('../models/LastName.model')
+
+const {randomIntFromInterval} = require('../functions/functions')
 
 module.exports.getRandomName = (req, res, next) => {
-
-
-
-  res.json(names)
-
-  //next(createError(404, { errors: { email: 'Email or password is incorrect' }}))
-
-    
+  randomIntFromInterval(0,1) ?
+  Malename.aggregate([{ $sample: { size: 1 } }])
+  .then(name => res.json(name))
+  .catch(e => next(e))
+  : 
+  Femalename.aggregate([{ $sample: { size: 1 } }])
+  .then(name => res.json(name))
+  .catch(e => next(e))
 }
+
+module.exports.getFemaleName = (req, res, next) => {
+  Femalename.aggregate([{ $sample: { size: 1 } }])
+  .then(name => res.json(name))
+  .catch(e => next(e))
+}
+
+
+module.exports.getMaleName = (req, res, next) => {
+  Malename.aggregate([{ $sample: { size: 1 } }])
+  .then(name => res.json(name))
+  .catch(e => next(e))
+}
+
