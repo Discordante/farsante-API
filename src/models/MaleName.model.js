@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const MaleNameSchema = mongoose.Schema(
   {
-    malename: {
+    name: {
       type: String
     }
   },
