@@ -16,3 +16,17 @@ module.exports.getRandomName = (req, res, next) => {
   .then(name => res.json(name))
   .catch(e => next(e))
 }
+
+module.exports.getFemaleName = (req, res, next) => {
+  Femalename.aggregate([{ $sample: { size: 1 } }])
+  .then(name => res.json(name))
+  .catch(e => next(e))
+}
+
+
+module.exports.getMaleName = (req, res, next) => {
+  Malename.aggregate([{ $sample: { size: 1 } }])
+  .then(name => res.json(name))
+  .catch(e => next(e))
+}
+
