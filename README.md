@@ -7,14 +7,14 @@ The project is inspired by the faker API, which is widely used to obtain random 
 
 The API must handle the following resources:
 
-
+##People
 
 | HTTP Method |     Path     |        Description        |
 | ----------- | ------------ | ------------------------- |
 | GET         | /randomName  | get a random name         |
 | GET         | /femaleName  | get a random female name  |
 | GET         | /maleName    | get a random male name    |
-| GET         | /lastName    | get a random surname      |
+| GET         | /lastName    | get a random lastname     |
 
 
 Example of the randomName request:
