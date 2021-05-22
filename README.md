@@ -17,7 +17,7 @@ The API must handle the following resources:
 | GET         | /lastName    | get a random lastname     |
 
 
-Example of the /randomName request:
+Example of /randomName endpoint request:
 
 ```
 {
@@ -36,7 +36,7 @@ Example of the /randomName request:
 
 
 
-Example of the /dni request:
+Example of /dni endopoint request:
 
 ```
 {
