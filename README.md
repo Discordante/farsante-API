@@ -2,7 +2,7 @@
 
 https://farsante-api.herokuapp.com
 
-This API is able to generate random data from Spanish users, adapting the format to the one expected in that country.
+This API is able to generate random data adapted to the format used in Spain and Europe.
 The project is inspired by the faker API, which is widely used to obtain random data.
 
 The API must handle the following resources:
