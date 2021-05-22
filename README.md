@@ -7,7 +7,7 @@ The project is inspired by the faker API, which is widely used to obtain random 
 
 The API must handle the following resources:
 
-##People
+## People
 
 | HTTP Method |     Path     |        Description        |
 | ----------- | ------------ | ------------------------- |
