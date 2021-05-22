@@ -17,12 +17,28 @@ The API must handle the following resources:
 | GET         | /lastName    | get a random lastname     |
 
 
-Example of the randomName request:
+Example of the /randomName request:
 
 ```
 {
   "_id": "60a79464237a638c6c108402",
-  "name": "Calixto",
+  "name": "Alfonso",
   "createdAt": "2021-05-21T11:07:16.586Z",
   "updatedAt": "2021-05-21T11:07:16.586Z"
+}
+
+
+## Documentation
+
+| HTTP Method |     Path     |        Description        |
+| ----------- | ------------ | ------------------------- |
+| GET         | /dni         | get a random DNI          |
+
+
+
+Example of the /dni request:
+
+```
+{
+  "75015202N"
 }
