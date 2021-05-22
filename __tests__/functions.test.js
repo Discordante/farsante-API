@@ -1,4 +1,9 @@
 const {randomIntFromInterval} = require('../src/functions/functions')
+const {dniGenerator} = require('../src/functions/functions')
+
+//REGEX
+const {NIF_REGEX, UPPERCASE} = require('../src/constants/regex')
+
 
 describe('Random integer between 2 numbers', () => {
     test('Interval two positive integers', () => {
@@ -18,3 +23,26 @@ describe('Random integer between 2 numbers', () => {
         expect(randomIntFromInterval(-45,25)).toBeGreaterThanOrEqual(-45)
     })
 });
+
+
+describe('Generate random DNI', () => {
+    test('Check DNI length', () => {
+        expect(dniGenerator()).toHaveLength(9)
+    })
+    test('Check if the last character is an uppercase letter', () => {
+        expect(dniGenerator().charAt(8)).toMatch( new RegExp (UPPERCASE))
+    })
+    test('Test 10 random DNI numbers with letter', () => {
+        expect(dniGenerator()).toMatch( new RegExp (NIF_REGEX))
+        expect(dniGenerator()).toMatch( new RegExp (NIF_REGEX))
+        expect(dniGenerator()).toMatch( new RegExp (NIF_REGEX))
+        expect(dniGenerator()).toMatch( new RegExp (NIF_REGEX))
+        expect(dniGenerator()).toMatch( new RegExp (NIF_REGEX))
+        expect(dniGenerator()).toMatch( new RegExp (NIF_REGEX))
+        expect(dniGenerator()).toMatch( new RegExp (NIF_REGEX))
+        expect(dniGenerator()).toMatch( new RegExp (NIF_REGEX))
+        expect(dniGenerator()).toMatch( new RegExp (NIF_REGEX))
+        expect(dniGenerator()).toMatch( new RegExp (NIF_REGEX))
+    })
+});
+
