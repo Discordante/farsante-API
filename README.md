@@ -27,7 +27,7 @@ Example of the /randomName request:
   "updatedAt": "2021-05-21T11:07:16.586Z"
 }
 
-
+```
 ## Documentation
 
 | HTTP Method |     Path     |        Description        |
