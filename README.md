@@ -40,5 +40,5 @@ Example of /dni endopoint request:
 
 ```
 {
-  "75015202N"
+  "dni": "75015202N"
 }
