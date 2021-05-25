@@ -1,4 +1,4 @@
-![npm bundle size](https://img.shields.io/Discordante/min/farsante-API)
+https://img.shields.io/github/repo-size/Discordante/farsante-API
 # FARSANTE API
 
 https://farsante-api.herokuapp.com
