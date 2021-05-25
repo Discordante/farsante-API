@@ -3,6 +3,7 @@ const router = express.Router();
 
 const peopleController = require('../controllers/people.controller')
 const documentController = require('../controllers/document.controller')
+const placesController = require('../controllers/places.controller')
 
 router.get('/randomName', peopleController.getRandomName)
 router.get('/femaleName', peopleController.getFemaleName)
