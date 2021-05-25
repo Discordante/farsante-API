@@ -1,0 +1,206 @@
+{
+	"info": {
+		"_postman_id": "08864495-68fc-4287-854f-589ba00c8a89",
+		"name": "Farsante-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "People",
+			"item": [
+				{
+					"name": "Random female name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_API_URL}}/femaleName",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"femaleName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Random male name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_API_URL}}/maleName",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"maleName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Random name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_API_URL}}/randomName",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"randomName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Random lastName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_API_URL}}/lastName",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"lastName"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Documentation",
+			"item": [
+				{
+					"name": "Random DNI",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_API_URL}}/dni",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"dni"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cities and Municipalities",
+			"item": [
+				{
+					"name": "Random city",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_API_URL}}/randomCity",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"randomCity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Random munipality",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_API_URL}}/randomMunicipality",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"randomMunicipality"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
