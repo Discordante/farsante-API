@@ -11,4 +11,7 @@ router.get('/lastName', peopleController.getLastName)
 
 router.get('/dni', documentController.getDNI)
 
+//cities and municipalities
+router.get('/randomCity', placesController.getRandomCity)
+
 module.exports = router;
