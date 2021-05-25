@@ -1,9 +1,5 @@
 # FARSANTE API
-https://img.shields.io/github/repo-size/Discordante/farsante-API
 ![GitHub repo size](https://img.shields.io/github/repo-size/Discordante/farsante-API)
-.. image:: https://img.shields.io/github/repo-size/Discordante/farsante-API   :alt: GitHub repo size
-image:https://img.shields.io/github/repo-size/Discordante/farsante-API[GitHub repo size]
-https://img.shields.io/github/repo-size/Discordante/farsante-API
 
 https://farsante-api.herokuapp.com
 
