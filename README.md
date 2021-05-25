@@ -1,5 +1,5 @@
 # FARSANTE API
-![npm](https://img.shields.io/github/repo-size/Discordante/farsante-API)
+(https://img.shields.io/github/repo-size/Discordante/farsante-API)
 
 https://farsante-api.herokuapp.com
 
