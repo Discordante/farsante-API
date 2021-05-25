@@ -8,6 +8,7 @@ https://farsante-api.herokuapp.com
 
 This API is able to generate random data adapted to the format used in Spain and Europe.
 The project is inspired by the faker API, which is widely used to obtain random data.
+The first time a request is made it is possible that the response time will be around 20s due to heroku. This only happens the first time, subsequent requests will work as normal.
 
 The API must handle the following resources:
 
