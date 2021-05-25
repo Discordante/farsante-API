@@ -4,6 +4,9 @@ const request = supertest(app)
 
 describe('Test http GET request.', () => {
 
+
+  /* ------------ People endpoint ---------- */
+
   // Sends GET Request to /randomName endpoint
   it('Test /randomName endpoint', async done => {
     const res = await request.get('/randomName')
@@ -32,10 +35,31 @@ describe('Test http GET request.', () => {
     done()
   })
 
+
+  /* ------------ Documentation endpoint ---------- */
+
   // Sends GET Request to /dni endpoint
   it('Test /dni endpoint', async done => {
     const res = await request.get('/dni')
     expect(res.status).toBe(200)
     done()
   })
+
+
+  /* ------------ Places endpoint ---------- */
+
+  // Sends GET Request to /randomCity endpoint
+  it('Test /randomCity endpoint', async done => {
+    const res = await request.get('/randomCity')
+    expect(res.status).toBe(200)
+    done()
+  })
+
+    // Sends GET Request to /randomMunicipality endpoint
+    it('Test /randomMunicipality endpoint', async done => {
+      const res = await request.get('/randomMunicipality')
+      expect(res.status).toBe(200)
+      done()
+    })
+
 })
