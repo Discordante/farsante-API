@@ -1,5 +1,8 @@
-# FARSANTE API
 ![GitHub repo size](https://img.shields.io/github/repo-size/Discordante/farsante-API)
+![APM](https://img.shields.io/apm/l/vim-mode?logoColor=https%3A%2F%2Fimg.shields.io%2Fapm%2Fl%2Fvim-mode)
+
+# FARSANTE API
+
 
 https://farsante-api.herokuapp.com
 
