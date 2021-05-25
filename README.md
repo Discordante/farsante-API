@@ -36,7 +36,7 @@ Example of /randomName endpoint request:
 
 
 
-Example of /dni endopoint request:
+Example of /dni endpoint request:
 
 ```
 {
@@ -52,7 +52,7 @@ Example of /dni endopoint request:
 
 
 
-Example of /randomCity endopoint request:
+Example of /randomCity endpoint request:
 
 ```
 {
@@ -69,7 +69,7 @@ Example of /randomCity endopoint request:
 }
 ```
 
-Example of /randomMunicipality endopoint request:
+Example of /randomMunicipality endpoint request:
 
 ```
 {
