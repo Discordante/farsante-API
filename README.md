@@ -45,13 +45,14 @@ Example of /dni endopoint request:
 ```
 ## Cities and Municipalities
 
-| HTTP Method |     Path     |        Description        |
-| ----------- | ------------ | ------------------------- |
-| GET         | /randomCity  | get a random city         |
+| HTTP Method |     Path             |        Description        |
+| ----------- | -------------------- | ------------------------- |
+| GET         | /randomCity          | get a random city         |
+| GET         | /randomMunicipality  | get a random municipality |
 
 
 
-Example of /city endopoint request:
+Example of /randomCity endopoint request:
 
 ```
 {
@@ -65,5 +66,19 @@ Example of /city endopoint request:
   "capital": "",
   "population": "5811",
   "population_proper": "5811"
+}
+```
+
+Example of /randomMunicipality endopoint request:
+
+```
+{
+  "_id": "60ac978a55e39114379df6a3",
+  "codigo_postal": "33450",
+  "municipio_id": "33016",
+  "municipio_nombre": "Castrillón",
+  "codigo_unidad_poblacional": "0218702",
+  "entidad_singular_nombre": "Vegarrozadas",
+  "nucleo_nombre": "Muro (El)"
 }
 ```
