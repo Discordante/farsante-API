@@ -14,5 +14,6 @@ router.get('/dni', documentController.getDNI)
 
 //cities and municipalities
 router.get('/randomCity', placesController.getRandomCity)
+router.get('/randomMunicipality', placesController.getRandomMunicipality)
 
 module.exports = router;
