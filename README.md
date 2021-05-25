@@ -42,3 +42,28 @@ Example of /dni endopoint request:
 {
   "dni": "75015202N"
 }
+```
+## Cities and Municipalities
+
+| HTTP Method |     Path     |        Description        |
+| ----------- | ------------ | ------------------------- |
+| GET         | /randomCity  | get a random city         |
+
+
+
+Example of /city endopoint request:
+
+```
+{
+  "_id": "60ac98e155e39114379e611a",
+  "city": "Arroyo de la Luz",
+  "lat": "39.4840",
+  "lng": "-6.5846",
+  "country": "Spain",
+  "iso2": "ES",
+  "admin_name": "Extremadura",
+  "capital": "",
+  "population": "5811",
+  "population_proper": "5811"
+}
+```
