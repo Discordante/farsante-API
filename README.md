@@ -1,3 +1,4 @@
+![npm bundle size](https://img.shields.io/bundlephobia/min/farsante-API)
 # FARSANTE API
 
 https://farsante-api.herokuapp.com
