@@ -1,12 +1,21 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/Discordante/farsante-API)
 ![APM](https://img.shields.io/apm/l/vim-mode?logoColor=https%3A%2F%2Fimg.shields.io%2Fapm%2Fl%2Fvim-mode)
 
+# FARSANTE API
+
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
+      <li>
+        <a href="#getting-started">Getting Started</a>
+        <ul>
+          <li><a href="#prerequisites">Prerequisites</a></li>
+          <li><a href="#installation">Installation</a></li>
+        </ul>
+      </li>
      <li>
-      <a href="#farsante-api">EndPoints</a>
+      <a href="#endpoints">EndPoints</a>
       <ul>
           <li><a href="#people">People</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -18,7 +27,39 @@
   </ol>
 </details>
 
-# FARSANTE API
+<!-- GETTING STARTED -->
+## Getting Started
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+farsante-api is developed using nodeJS, so it is necessary to have this runtime environment installed.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/Discordante/farsante-API.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+### postman
+### test
+
+
+## EndPoints
 
 
 https://farsante-api.herokuapp.com
