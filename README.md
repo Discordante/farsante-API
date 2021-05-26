@@ -47,7 +47,7 @@ The first time a request is made it is possible that the response time will be a
 
 The main technologies used to develop the project are as follows:
 
-* [nodeJs](https://nodejs.org/en/about/
+* [nodeJs](https://nodejs.org/en/about/)
 * [ExpressJs](https://expressjs.com/)
 * [Mongoose](https://mongoosejs.com/)
 * [Jest](https://jestjs.io/)
