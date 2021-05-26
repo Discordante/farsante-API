@@ -34,6 +34,23 @@ Example of /randomName endpoint request:
 }
 
 ```
+## Contact
+
+| HTTP Method |     Path     |        Description        |
+| ----------- | ------------ | ------------------------- |
+| GET         | /phoneNumber | get a random phone number |
+
+
+
+Example of /phoneNumber endpoint request:
+
+```
+{
+  "phone": "652194271"
+}
+```
+
+
 ## Documentation
 
 | HTTP Method |     Path     |        Description        |
