@@ -61,7 +61,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-farsante-api is developed using nodeJS, so it is necessary to have this runtime environment installed.
+farsante-api is developed using npm packages, so it is necessary to have it installed.
 * npm
   ```sh
   npm install npm@latest -g
@@ -73,7 +73,7 @@ farsante-api is developed using nodeJS, so it is necessary to have this runtime 
    ```sh
    git clone https://github.com/Discordante/farsante-API.git
    ```
-2. Install NPM packages
+2. Install npm packages
    ```sh
    npm install
    ```
