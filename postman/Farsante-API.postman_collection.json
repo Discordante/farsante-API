@@ -115,6 +115,37 @@
 			]
 		},
 		{
+			"name": "Contact",
+			"item": [
+				{
+					"name": "Random phone number",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_API_URL}}/phoneNumber",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"phoneNumber"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "Documentation",
 			"item": [
 				{
