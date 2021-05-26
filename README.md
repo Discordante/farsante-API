@@ -5,10 +5,16 @@
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#people">People</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#documentation">Documentation</a></li>
-    <li><a href="#cities-and-municipalities">Cities and Municipalities</a></li>
+     <li>
+      <a href="#farsante-api">EndPoints</a>
+      <ul>
+          <li><a href="#people">People</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#documentation">Documentation</a></li>
+          <li><a href="#cities-and-municipalities">Cities and Municipalities</a></li>
+      </ul>
+    </li>
+  
   </ol>
 </details>
 
