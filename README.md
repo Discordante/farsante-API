@@ -1,6 +1,17 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/Discordante/farsante-API)
 ![APM](https://img.shields.io/apm/l/vim-mode?logoColor=https%3A%2F%2Fimg.shields.io%2Fapm%2Fl%2Fvim-mode)
 
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#people">People</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#documentation">Documentation</a></li>
+    <li><a href="#cities-and-municipalities">Cities and Municipalities</a></li>
+  </ol>
+</details>
+
 # FARSANTE API
 
 
