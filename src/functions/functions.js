@@ -28,5 +28,6 @@ module.exports.randomPhoneNumber = () => {
     for (let i=0; i<8; i++){
         phoneNum += (Math.floor(Math.random() * 10))  
     }
-    return phoneNum.toString()
+    phoneNum.toString()
+    return phoneNum
   };
