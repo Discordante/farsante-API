@@ -23,7 +23,7 @@ module.exports.dniGenerator = () => {
 } 
 
 /* -- Return random phone number -- */
-const randomPhoneNumber = (format) => {
+module.exports.randomPhoneNumber = () => {
     let phoneNum ="6"
     for (let i=0; i<8; i++){
         phoneNum += (Math.floor(Math.random() * 10))  
