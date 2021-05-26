@@ -7,6 +7,12 @@
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
       <li>
         <a href="#getting-started">Getting Started</a>
         <ul>
@@ -26,6 +32,26 @@
   
   </ol>
 </details>
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+https://farsante-api.herokuapp.com
+
+This API is able to generate random data adapted to the format used in Spain and Europe.
+The project is inspired by the faker API, which is widely used to obtain random data.
+
+The first time a request is made it is possible that the response time will be around 20s due to heroku. This only happens the first time, subsequent requests will work as normal.
+
+### Built With
+
+The main technologies used to develop the project are as follows:
+
+* [nodeJs](https://nodejs.org/en/about/
+* [ExpressJs](https://expressjs.com/)
+* [Mongoose](https://mongoosejs.com/)
+* [Jest](https://jestjs.io/)
+
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -60,14 +86,6 @@ farsante-api is developed using nodeJS, so it is necessary to have this runtime 
 
 
 ## EndPoints
-
-
-https://farsante-api.herokuapp.com
-
-This API is able to generate random data adapted to the format used in Spain and Europe.
-The project is inspired by the faker API, which is widely used to obtain random data.
-
-The first time a request is made it is possible that the response time will be around 20s due to heroku. This only happens the first time, subsequent requests will work as normal.
 
 The API must handle the following resources:
 
