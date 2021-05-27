@@ -52,6 +52,8 @@ module.exports.randomEmailUser = (username) => {
         userEmail=`${username}`
         break;
     default:
+        userEmail=`${username}${Math.floor(Math.random() * 9)}`
+        break;
     }
     return userEmail
 };

@@ -23,8 +23,8 @@ module.exports.getEmail = (req, res, next) => {
     switch (randomIntFromInterval(1,3)) {
         case 1:
             Malename.aggregate([{ $sample: { size: 1 } }])
-            .then(name =>  {
-                emailObj.user=randomEmailUser(name)
+            .then(resp =>  {
+                emailObj.user=randomEmailUser(resp.name)
                 emailObj.email = `${emailObj.user}@${emailObj.domain}${emailObj.TLD}`
                 res.status(200).json(emailObj)
             })
@@ -33,7 +33,7 @@ module.exports.getEmail = (req, res, next) => {
         case 2:
             Femalename.aggregate([{ $sample: { size: 1 } }])
             .then(name =>  {
-                emailObj.user=randomEmailUser(name)
+                emailObj.user=randomEmailUser(resp.name)
                 emailObj.email = `${emailObj.user}@${emailObj.domain}${emailObj.TLD}`
                 res.status(200).json(emailObj)
             })
@@ -42,7 +42,7 @@ module.exports.getEmail = (req, res, next) => {
         case 3:
             Lastname.aggregate([{ $sample: { size: 1 } }])
             .then(name =>  {
-                emailObj.user=randomEmailUser(name)
+                emailObj.user=randomEmailUser(resp.name)
                 emailObj.email = `${emailObj.user}@${emailObj.domain}${emailObj.TLD}`
                 res.status(200).json(emailObj)
             })
