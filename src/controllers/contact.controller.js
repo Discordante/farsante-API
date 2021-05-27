@@ -18,7 +18,7 @@ module.exports.getEmail = (req, res, next) => {
         user: "",
         domain: randomEmailDomain(),
         TLD: ".com",
-        email=""
+        email: ""
     }
     switch (randomIntFromInterval(1,3)) {
         case 1:
