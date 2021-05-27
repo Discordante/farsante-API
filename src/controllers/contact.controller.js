@@ -32,7 +32,7 @@ module.exports.getEmail = (req, res, next) => {
             break;
         case 2:
             Femalename.aggregate([{ $sample: { size: 1 } }])
-            .then(name =>  {
+            .then(resp =>  {
                 emailObj.user=randomEmailUser(resp.name)
                 emailObj.email = `${emailObj.user}@${emailObj.domain}${emailObj.TLD}`
                 res.status(200).json(emailObj)
@@ -41,7 +41,7 @@ module.exports.getEmail = (req, res, next) => {
             break;
         case 3:
             Lastname.aggregate([{ $sample: { size: 1 } }])
-            .then(name =>  {
+            .then(resp =>  {
                 emailObj.user=randomEmailUser(resp.name)
                 emailObj.email = `${emailObj.user}@${emailObj.domain}${emailObj.TLD}`
                 res.status(200).json(emailObj)
