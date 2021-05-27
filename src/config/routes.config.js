@@ -4,7 +4,7 @@ const router = express.Router();
 const peopleController = require('../controllers/people.controller')
 const documentController = require('../controllers/document.controller')
 const placesController = require('../controllers/places.controller')
-const placesContact = require('../controllers/contact.controller')
+const contactController = require('../controllers/contact.controller')
 
 //people
 router.get('/randomName', peopleController.getRandomName)
@@ -14,8 +14,8 @@ router.get('/lastName', peopleController.getLastName)
 router.get('/fullName', peopleController.getFullName)
 
 //contact
-router.get('/phoneNumber', placesContact.getPhoneNumber)
-router.get('/email', placesContact.getEmail)
+router.get('/phoneNumber', contactController.getPhoneNumber)
+router.get('/email', contactController.getEmail)
 
 //documentation
 router.get('/dni', documentController.getDNI)

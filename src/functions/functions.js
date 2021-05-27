@@ -53,6 +53,5 @@ module.exports.randomEmailUser = (username) => {
         break;
     default:
     }
-
     return userEmail
 };

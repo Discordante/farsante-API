@@ -17,33 +17,39 @@ module.exports.getEmail = (req, res, next) => {
     let emailObj= {
         user: "",
         domain: randomEmailDomain(),
-        TLD: ".com"
+        TLD: ".com",
+        email=""
     }
     switch (randomIntFromInterval(1,3)) {
         case 1:
             Malename.aggregate([{ $sample: { size: 1 } }])
             .then(name =>  {
-                emailObj.name=randomEmailUser(name)
-                break;
+                emailObj.user=randomEmailUser(name)
+                emailObj.email = `${emailObj.user}@${emailObj.domain}${emailObj.TLD}`
+                res.status(200).json(emailObj)
             })
             .catch(e => next(e))
+            break;
         case 2:
             Femalename.aggregate([{ $sample: { size: 1 } }])
             .then(name =>  {
-                emailObj.name=randomEmailUser(name)
-                break;
+                emailObj.user=randomEmailUser(name)
+                emailObj.email = `${emailObj.user}@${emailObj.domain}${emailObj.TLD}`
+                res.status(200).json(emailObj)
             })
             .catch(e => next(e))
+            break;
         case 3:
             Lastname.aggregate([{ $sample: { size: 1 } }])
             .then(name =>  {
-                emailObj.name=randomEmailUser(name)
-                break;
+                emailObj.user=randomEmailUser(name)
+                emailObj.email = `${emailObj.user}@${emailObj.domain}${emailObj.TLD}`
+                res.status(200).json(emailObj)
             })
             .catch(e => next(e))
+            break;
         default:
+            break;
         }
-
-    res.status(200).json(emailObj)
 }
 
