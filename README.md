@@ -106,6 +106,7 @@ The API must handle the following resources:
 | GET         | /femaleName  | get a random female name  |
 | GET         | /maleName    | get a random male name    |
 | GET         | /lastName    | get a random lastname     |
+| GET         | /fullName    | get a random full name    |
 
 
 Example of /randomName endpoint request:
@@ -116,6 +117,15 @@ Example of /randomName endpoint request:
   "name": "Alfonso",
   "createdAt": "2021-05-21T11:07:16.586Z",
   "updatedAt": "2021-05-21T11:07:16.586Z"
+}
+```
+
+Example of /fullName endpoint request:
+```
+{
+    "name": "Josefa",
+    "firstSurname": "Campos",
+    "secondSurname": "Fernandez"
 }
 
 ```
