@@ -35,6 +35,15 @@ describe('Test http GET request.', () => {
     done()
   })
 
+    /* ------------ Contact endpoint ---------- */
+
+  // Sends GET Request to /dni endpoint
+  it('Test /phoneNumber endpoint', async done => {
+    const res = await request.get('/phoneNumber')
+    expect(res.status).toBe(200)
+    done()
+  })
+
 
   /* ------------ Documentation endpoint ---------- */
 
