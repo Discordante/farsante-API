@@ -3,6 +3,39 @@
 
 # FARSANTE API
 
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+      <li>
+        <a href="#getting-started">Getting Started</a>
+        <ul>
+          <li><a href="#prerequisites">Prerequisites</a></li>
+          <li><a href="#installation">Installation</a></li>
+        </ul>
+      </li>
+        <li><a href="#usage">Usage</a></li>
+     <li>
+      <a href="#endpoints">EndPoints</a>
+      <ul>
+          <li><a href="#people">People</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#documentation">Documentation</a></li>
+          <li><a href="#cities-and-municipalities">Cities and Municipalities</a></li>
+      </ul>
+    </li>
+  
+  </ol>
+</details>
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
 https://farsante-api.herokuapp.com
 
@@ -10,6 +43,58 @@ This API is able to generate random data adapted to the format used in Spain and
 The project is inspired by the faker API, which is widely used to obtain random data.
 
 The first time a request is made it is possible that the response time will be around 20s due to heroku. This only happens the first time, subsequent requests will work as normal.
+
+### Built With
+
+The main technologies used to develop the project are as follows:
+
+* [nodeJs](https://nodejs.org/en/about/)
+* [ExpressJs](https://expressjs.com/)
+* [Mongoose](https://mongoosejs.com/)
+* [Jest](https://jestjs.io/)
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+farsante-api is developed using npm packages, so it is necessary to have it installed.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/Discordante/farsante-API.git
+   ```
+2. Install npm packages
+   ```sh
+   npm install
+   ```
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+### postman
+
+The project comes with configured environment files and postman collections. To use them, it is only necessary to import these files from the postman folder.
+
+### test
+
+1. Run test
+   ```sh
+   npm test
+   ```
+
+
+## EndPoints
 
 The API must handle the following resources:
 
