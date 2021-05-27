@@ -38,20 +38,32 @@ module.exports.getLastName = (req, res, next) => {
 
 
 module.exports.getFullName = (req, res, next) => {
-  let fullName = ""
+  let fullName = {
+    name:"",
+    firstSurname: "",
+    secondSurname: ""
+  }
   Lastname.aggregate([{ $sample: { size: 2 } }])
   .then(lastName => {
     randomIntFromInterval(0,1) ?
     Malename.aggregate([{ $sample: { size: 1 } }])
     .then(name =>  {
-      fullName = `${name[0].name} ${lastName[0].lastname} ${lastName[1].lastname}`
+      fullName = {
+        name: name[0].name,
+        firstSurname: lastName[0].lastname,
+        secondSurname: lastName[1].lastname
+      }
       res.status(200).json(fullName)
     })
     .catch(e => next(e))
     : 
     Femalename.aggregate([{ $sample: { size: 1 } }])
     .then(name =>  {
-      fullName = `${name[0].name} ${lastName[0].lastname} ${lastName[1].lastname}`
+      fullName = {
+        name: name[0].name,
+        firstSurname: lastName[0].lastname,
+        secondSurname: lastName[1].lastname
+      }
       res.status(200).json(fullName)
     })
     .catch(e => next(e))
