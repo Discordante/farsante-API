@@ -15,6 +15,7 @@ router.get('/fullName', peopleController.getFullName)
 
 //contact
 router.get('/phoneNumber', placesContact.getPhoneNumber)
+router.get('/email', placesContact.getEmail)
 
 //documentation
 router.get('/dni', documentController.getDNI)
