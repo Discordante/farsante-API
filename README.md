@@ -109,17 +109,6 @@ The API must handle the following resources:
 | GET         | /fullName    | get a random full name    |
 
 
-Example of /randomName endpoint request:
-
-```
-{
-  "_id": "60a79464237a638c6c108402",
-  "name": "Alfonso",
-  "createdAt": "2021-05-21T11:07:16.586Z",
-  "updatedAt": "2021-05-21T11:07:16.586Z"
-}
-```
-
 Example of /fullName endpoint request:
 ```
 {
