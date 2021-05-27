@@ -43,16 +43,16 @@ module.exports.randomEmailUser = (username) => {
     let userEmail =""
     switch (Math.floor(Math.random() * (3) + 1)) {
     case 1:
-        userEmail=`${username}${Math.floor(Math.random() * 999)}`
+        userEmail=`${username.toLowerCase()}${Math.floor(Math.random() * 999)}`
         break;
     case 2:
-        userEmail=`${username}${Math.floor(Math.random() * 99)}`
+        userEmail=`${username.toLowerCase()}${Math.floor(Math.random() * 99)}`
         break;
     case 3:
-        userEmail=`${username}`
+        userEmail=`${username.toLowerCase()}`
         break;
     default:
-        userEmail=`${username}${Math.floor(Math.random() * 9)}`
+        userEmail=`${username.toLowerCase()}${Math.floor(Math.random() * 9)}`
         break;
     }
     return userEmail
