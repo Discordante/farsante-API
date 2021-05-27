@@ -44,14 +44,14 @@ module.exports.getFullName = (req, res, next) => {
     randomIntFromInterval(0,1) ?
     Malename.aggregate([{ $sample: { size: 1 } }])
     .then(name =>  {
-      fullName = `${name} ${lastName[0].lastname} ${lastName[1].lastname}`
+      fullName = `${name[0].name} ${lastName[0].lastname} ${lastName[1].lastname}`
       res.status(200).json(fullName)
     })
     .catch(e => next(e))
     : 
     Femalename.aggregate([{ $sample: { size: 1 } }])
     .then(name =>  {
-      fullName = `${name} ${lastName[0].lastname} ${lastName[1].lastname}`
+      fullName = `${name[0].name} ${lastName[0].lastname} ${lastName[1].lastname}`
       res.status(200).json(fullName)
     })
     .catch(e => next(e))
