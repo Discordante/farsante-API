@@ -1,5 +1,6 @@
 const {randomIntFromInterval} = require('../src/functions/functions')
 const {dniGenerator} = require('../src/functions/functions')
+const {randomPhoneNumber} = require('../src/functions/functions')
 
 //REGEX
 const {NIF_REGEX, UPPERCASE} = require('../src/constants/regex')
@@ -43,6 +44,16 @@ describe('Generate random DNI', () => {
         expect(dniGenerator()).toMatch( new RegExp (NIF_REGEX))
         expect(dniGenerator()).toMatch( new RegExp (NIF_REGEX))
         expect(dniGenerator()).toMatch( new RegExp (NIF_REGEX))
+    })
+});
+
+
+describe('Generate random phone number', () => {
+    test('Check phone number length', () => {
+        expect(randomPhoneNumber()).toHaveLength(9)
+    })
+    test('Check if the first character is 6', () => {
+        expect(randomPhoneNumber().charAt(0)).toBe("6")
     })
 });
 
