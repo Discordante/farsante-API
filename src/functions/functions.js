@@ -36,7 +36,7 @@ module.exports.randomPhoneNumber = () => {
 
 module.exports.randomEmailDomain = () => {
     const {EMAIL_DOMAIN} = require('../constants/constants')
-    return EMAIL_DOMAIN[Math.floor(Math.random() * (EMAIL_DOMAIN.length + 1))]
+    return EMAIL_DOMAIN[Math.floor(Math.random() * (EMAIL_DOMAIN.length))]
 };
 
 module.exports.randomEmailUser = (username) => {
