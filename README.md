@@ -123,6 +123,7 @@ Example of /fullName endpoint request:
 | HTTP Method |     Path     |        Description        |
 | ----------- | ------------ | ------------------------- |
 | GET         | /phoneNumber | get a random phone number |
+| GET         | /email       | get a random email        |
 
 
 
@@ -131,6 +132,17 @@ Example of /phoneNumber endpoint request:
 ```
 {
   "phone": "652194271"
+}
+```
+
+Example of /email endpoint request:
+
+```
+{
+    "user": "luciano92",
+    "domain": "msn",
+    "TLD": ".com",
+    "email": "luciano92@msn.com"
 }
 ```
 
