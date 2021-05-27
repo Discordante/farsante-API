@@ -42,7 +42,7 @@ module.exports.getEmail = (req, res, next) => {
         case 3:
             Lastname.aggregate([{ $sample: { size: 1 } }])
             .then(resp =>  {
-                emailObj.user=randomEmailUser(resp[0].name)
+                emailObj.user=randomEmailUser(resp[0].lastname)
                 emailObj.email = `${emailObj.user}@${emailObj.domain}${emailObj.TLD}`
                 res.status(200).json(emailObj)
             })
