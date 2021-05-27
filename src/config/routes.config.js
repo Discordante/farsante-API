@@ -11,6 +11,7 @@ router.get('/randomName', peopleController.getRandomName)
 router.get('/femaleName', peopleController.getFemaleName)
 router.get('/maleName', peopleController.getMaleName)
 router.get('/lastName', peopleController.getLastName)
+router.get('/fullName', peopleController.getFullName)
 
 //contact
 router.get('/phoneNumber', placesContact.getPhoneNumber)
