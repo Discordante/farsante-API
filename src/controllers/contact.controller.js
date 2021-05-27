@@ -1,6 +1,6 @@
 const createError = require('http-errors')
 const {randomPhoneNumber} = require('../functions/functions')
-const {randomEmail} = require('../functions/functions')
+const {randomEmailDomain} = require('../functions/functions')
 
 module.exports.getPhoneNumber = (req, res, next) => {
     let phoneNumber= {
@@ -12,8 +12,11 @@ module.exports.getPhoneNumber = (req, res, next) => {
 
 module.exports.getEmail = (req, res, next) => {
     let emailObj= {
-        email: randomEmail()
+        user: "",
+        domain: randomEmailDomain(),
+        TLD: ".com"
     }
+
     res.status(200).json(emailObj)
 }
 
