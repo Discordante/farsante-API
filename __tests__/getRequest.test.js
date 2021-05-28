@@ -37,13 +37,20 @@ describe('Test http GET request.', () => {
 
     /* ------------ Contact endpoint ---------- */
 
-  // Sends GET Request to /dni endpoint
+  // Sends GET Request to /phoneNumber endpoint
   it('Test /phoneNumber endpoint', async done => {
     const res = await request.get('/phoneNumber')
     expect(res.status).toBe(200)
     done()
   })
 
+    // Sends GET Request to /email endpoint
+    it('Test /email endpoint', async done => {
+      const res = await request.get('/email')
+      expect(res.status).toBe(200)
+      done()
+    })
+  
 
   /* ------------ Documentation endpoint ---------- */
 
