@@ -92,6 +92,12 @@ The project comes with configured environment files and postman collections. To 
    ```sh
    npm test
    ```
+### Docker
+In case you want to use the project via a docker container, the link to download it is as follows:
+
+    ```sh
+    docker pull discordante/farsante:latest
+    ```
 
 
 ## EndPoints
