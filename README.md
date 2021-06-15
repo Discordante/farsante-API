@@ -82,7 +82,7 @@ farsante-api is developed using npm packages, so it is necessary to have it inst
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-### postman
+### Postman
 
 The project comes with configured environment files and postman collections. To use them, it is only necessary to import these files from the postman folder.
 
